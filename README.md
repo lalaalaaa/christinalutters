@@ -1,4 +1,5 @@
-christinalutters
+Personal Website of Christina Lutters
 ================
 
-Personal Site
+#Deployments 
+The `master` branch auto deploys to [production](http://christinalutters.com) via [FTPloy](https://ftploy.com/dashboard).
