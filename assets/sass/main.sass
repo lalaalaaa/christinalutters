@@ -1,13 +1,13 @@
-//
-// HTML5 Boilerplate
- *
-// What follows is the result of much research on cross-browser styling.
-// Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
-// Kroc Camen, and the H5BP dev community and team.
+// ==========================================================================
+// Base styles
+// ==========================================================================
 
-// ==========================================================================
-// Base styles: opinionated defaults
-// ==========================================================================
+@font-face 
+  font-family: 'montserratregular'
+  src: url('../fonts/Montserrat-Regular-webfont.eot')
+  src: url('../fonts/Montserrat-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat-Regular-webfont.woff') format('woff'), url('../fonts/Montserrat-Regular-webfont.ttf') format('truetype'), url('../fonts/Montserrat-Regular-webfont.svg#montserratregular') format('svg')
+  font-weight: normal
+  font-style: normal
 
 html, button, input, select, textarea
   color: #222
@@ -23,14 +23,8 @@ a
   &:hover
     color: #06e
 
-// Allow only vertical resizing of textareas.
-
 textarea
   resize: vertical
-
-// ==========================================================================
-// Author's custom styles
-// ==========================================================================
 
 html, body
   height: 100%
@@ -282,12 +276,12 @@ p
 
 a
   &.cw
-    background-image: url(assets/img/jerrycan.svg)
+    background-image: url(../img/jerrycan.svg)
     background-size: auto 80%
   &.twitter
-    background-image: url(assets/img/twitter.svg)
+    background-image: url(../img/twitter.svg)
   &.email
-    background-image: url(assets/img/email.svg)
+    background-image: url(../img/email.svg)
 
 // ==========================================================================
 // Media Queries
