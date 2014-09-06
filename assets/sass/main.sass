@@ -1,0 +1,303 @@
+//
+// HTML5 Boilerplate
+ *
+// What follows is the result of much research on cross-browser styling.
+// Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+// Kroc Camen, and the H5BP dev community and team.
+
+// ==========================================================================
+// Base styles: opinionated defaults
+// ==========================================================================
+
+html, button, input, select, textarea
+  color: #222
+
+body
+  font-size: 1em
+  line-height: 1.4
+
+a
+  color: #00e
+  &:visited
+    color: #551a8b
+  &:hover
+    color: #06e
+
+// Allow only vertical resizing of textareas.
+
+textarea
+  resize: vertical
+
+// ==========================================================================
+// Author's custom styles
+// ==========================================================================
+
+html, body
+  height: 100%
+
+*
+  box-sizing: border-box
+
+.left
+  float: left
+
+.right
+  float: right
+
+[class^="c-"], [class^="g-"]
+  box-shadow: inset 0 0 0 1px #000
+
+.no-border
+  box-shadow: none
+
+.c1
+  width: 100vw
+  height: 62vw
+
+.c-odd
+  width: 100%
+  height: 38%
+  
+.c-even
+  width: 38%
+  height: 100%
+
+.g-even
+  width: 100%
+  height: 62%
+
+.g-odd
+  width: 62%
+  height: 100%
+
+
+.button
+  display: block
+  margin: .5em
+  text-transform: uppercase
+  text-align: center
+  letter-spacing: .05em
+  border: 6px solid rgba(0, 0, 0, 0.2)
+  color: rgba(0, 0, 0, 0.2)
+  font-weight: bold
+  text-decoration: none
+  
+.buttons 
+  padding: 0
+  box-shadow: none
+  .button
+    padding-top: 15%
+    padding-bottom: 15%
+    margin: 5%
+    &:last-child
+      margin-bottom: 0
+
+.cw 
+  box-shadow: none
+  background-image: url("http://d2fukk4ky3czof.cloudfront.net/176928/large/7125c20984240739a0cf344adabd9f68d592c209/733735_300.jpg?1403616866")
+  background-size: auto 110%
+  background-repeat: no-repeat
+  background-position: center center
+  -webkit-filter: grayscale(1)
+  filter: grayscale(1)
+
+
+// ==========================================================================
+// Helper classes
+// ==========================================================================
+
+// Prevent callout
+
+.nocallout
+  -webkit-touch-callout: none
+
+.pressed
+  background-color: rgba(0, 0, 0, 0.7)
+
+// A hack for HTML5 contenteditable attribute on mobile
+
+textarea[contenteditable]
+  -webkit-appearance: none
+
+// A workaround for S60 3.x and 5.0 devices which do not animated gif images if
+// they have been set as display: none
+
+.gifhidden
+  position: absolute
+  left: -100%
+
+//
+// Image replacement
+
+.ir
+  background-color: transparent
+  background-repeat: no-repeat
+  border: 0
+  direction: ltr
+  display: block
+  overflow: hidden
+  text-align: left
+  text-indent: -999em
+  br
+    display: none
+
+//
+// Hide from both screenreaders and browsers: h5bp.com/u
+
+.hidden
+  display: none !important
+  visibility: hidden
+
+//
+// Hide only visually, but have it available for screenreaders: h5bp.com/v
+
+.visuallyhidden
+  border: 0
+  clip: rect(0 0 0 0)
+  height: 1px
+  margin: -1px
+  overflow: hidden
+  padding: 0
+  position: absolute
+  width: 1px
+  &.focusable
+    &:active, &:focus
+      clip: auto
+      height: auto
+      margin: 0
+      overflow: visible
+      position: static
+      width: auto
+
+//
+// Extends the .visuallyhidden class to allow the element to be focusable
+// when navigated to via the keyboard: h5bp.com/p
+
+//
+// Hide visually and from screenreaders, but maintain layout
+
+.invisible
+  visibility: hidden
+
+//*
+// Clearfix helper
+// Used to contain floats: h5bp.com/q
+
+.clearfix
+  &:before
+    content: ""
+    display: table
+  &:after
+    content: ""
+    display: table
+    clear: both
+
+
+html
+  font-family: montserratregular, sans-serif
+  margin: 0
+  padding: 0
+  background-position: center center
+  background-repeat: no-repeat
+
+p
+  margin: 0
+
+.wrapper, .table, .bg
+  height: 100%
+  width: 100%
+
+.bg
+  background-size: cover
+  position: absolute
+  top: 0
+  left: 0
+  opacity: .1
+
+.table
+  display: table
+  position: relative
+  padding: 1em
+
+.cell
+  display: table-cell
+  vertical-align: middle
+  text-align: center
+  border: 4px double rgba(0, 0, 0, 0.2)
+  padding: 1em
+
+p
+  line-height: 1.1
+  margin-bottom: .5rem
+  color: rgba(0, 0, 0, 0.7)
+  font-family: Baskerville, Georgia
+  font-size: 1.2em
+  letter-spacing: .02em
+
+.amp
+  font-size: .7em
+
+.title
+  letter-spacing: .05em
+  font-size: 1.5em
+  margin-bottom: .85rem
+  line-height: 1em
+  text-transform: uppercase
+
+.body
+  position: relative
+  padding-bottom: 25px
+
+.small
+  font-size: .8em
+
+.ast-more
+  display: block
+  opacity: 0
+  overflow: hidden
+  transition: .1s linear all
+  position: absolute
+  bottom: 10px
+  width: 100%
+  color: #D8BE7B
+
+.ast:hover
+  cursor: pointer
+  color: #D8BE7B
+  + .ast-more
+    opacity: 1
+    bottom: 0px
+
+.links a
+  opacity: .2
+  transition: .1s linear opacity
+  background-size: auto 100%
+  display: inline-block
+  text-decoration: none
+  text-indent: -9999px
+  height: 40px
+  width: 40px
+  &:hover
+    opacity: .8
+
+a
+  &.cw
+    background-image: url(assets/img/jerrycan.svg)
+    background-size: auto 80%
+  &.twitter
+    background-image: url(assets/img/twitter.svg)
+  &.email
+    background-image: url(assets/img/email.svg)
+
+// ==========================================================================
+// Media Queries
+// ==========================================================================
+
+@media only screen and (min-width: 40.063em)
+  .title
+    font-size: 1.8em
+    margin-bottom: 1.7rem
+  p
+    font-size: 1.6em
+  .small
+    font-size: .8em
